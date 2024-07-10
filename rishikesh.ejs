@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishikesh || Uttarakhand Tourism</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style2.css">
+    <script>
+      function handleSearch(event) {
+          event.preventDefault(); 
+          const query = document.querySelector('input[type="search"]').value.toLowerCase();
+          
+          const searchMap = {
+              'rishikesh': '/rishikesh',
+              'nainital': '/nainital',
+              'corbett': '/corbett',
+              'panch kedar': '/panch-kedar',
+              'panch badri': '/panch-badri',
+              'panch prayag': '/panch-prayag',
+              'hemkund sahib': '/hemkund-sahib',
+              'dehradun': '/dehradun',
+          };
+          
+          if (searchMap[query]) {
+              window.location.href = searchMap[query];
+          } else {
+              alert('Page not found for: ' + query);
+          }
+      }
+  </script>
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light .bg-danger.bg-gradient custom-navbar">
+        <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/home">HOME</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      EXPLORE
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                      <li><a class="dropdown-item" href="#"><h5>Spiritual</h5></a></li>
+                      <li><a class="dropdown-item" href="/panch-kedar">Panch Kedar</a></li>
+                      <li><a class="dropdown-item" href="/panch-badri">Panch Badri</a></li>
+                      <li><a class="dropdown-item" href="/panch-parayag">Panch Parayag</a></li>
+                      <li><a class="dropdown-item" href="/hemkund-sahib">Hemkund Sahib</a></li>
+                      <li><a class="dropdown-item" href="/rishikesh">Rishikesh</a></li>
+                      <li><a class="dropdown-item" href="/nainital">Nainital</a></li>
+                      <li><a class="dropdown-item" href="/corbet">Jim Corbet </a></li>
+                      <li><a class="dropdown-item" href="#">Dhari Devi Temple</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      PLAN
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                      <li><a class="dropdown-item" href="/accommodations"> Accommodations</a></li>
+                      <li><a class="dropdown-item" href="/itineraries">Itineraries</a></li>
+                      <li><a class="dropdown-item" href="/treks">Treks</a></li>
+                      <li><a class="dropdown-item" href="/tourism-cir">Tourism Circuits </a></li>
+                      <li><a class="dropdown-item" href="#">Tourist Guide</a></li>
+                      <li><a class="dropdown-item" href="#">Travel Agents</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      TRADE
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                      <li><a class="dropdown-item" href="/homestay">Homestay Listing</a></li>
+                      <li><a class="dropdown-item" href="/travle">Travel Trade Listing</a></li>
+                      <li><a class="dropdown-item" href="/homestay-registration">Homestay Listing Registarion</a></li>
+                      <li><a class="dropdown-item" href="/travel-trade">Travel Trade Listing</a></li>
+                      <li><a class="dropdown-item" href="#">Invest In Uttarakhand Tourism</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      FAQ
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                      <li><a class="dropdown-item" href="/destination-faq">Destination FAQ</a></li>
+                      <li><a class="dropdown-item" href="/adventure">Adventure Tourism FAQ</a></li>
+                      <li><a class="dropdown-item" href="/homestay-faq">Home Stay FAQ</a></li>
+                      <li><a class="dropdown-item" href="/places">Places of Interest</a></li>
+                      <li><a class="dropdown-item" href="/religious">Religious Tourism FAQ</a></li>
+                      <li><a class="dropdown-item" href="/travel-faq">Travel Trade FAQ</a></li>
+                      <li><a class="dropdown-item" href="/treks">Trekking FAQ</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex ml-auto" onsubmit="handleSearch(event)">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success btn-red" type="submit">Search</button>
+              </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- Your content goes here -->
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-target="#carouselExampleCaptions" data-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-target="#carouselExampleCaptions" data-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-target="#carouselExampleCaptions" data-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://media.istockphoto.com/id/1044399860/photo/ganga-arthi-in-the-holy-city-of-rishikesh-in-uttarakhand-india-to-worship-river-ganga-ganges.jpg?s=612x612&w=0&k=20&c=699WoUWUOKCVzRWOG1mT1dMD7kqQWsQ76-37a_ws5BA=" class="d-block w-100" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>ENJOY THE BEAUTY OF UTTRAKHAND</h5>
+              <p>There is a kind of magicness about going far away and then coming back all changed.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.euttaranchal.com/tourism/photos/rishikesh-1350859.jpg" class="d-block w-100"  alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>ENJOY THE BEAUTY OF UTTRAKHAND</h5>
+              <p>There is a kind of magicness about going far away and then coming back all changed.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://media1.thrillophilia.com/filestore/4mfyqfhg5r8860gb37i506keef6f_River-Rafting-in-Rishikesh.jpg" class="d-block w-100" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>ENJOY THE BEAUTY OF UTTRAKHAND</h5>
+              <p>There is a kind of magicness about going far away and then coming back all changed.</p>
+            </div>
+          </div>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <h2 class="custom-title">RISHIKESH</h2>
+        <p class="custom-paragraph">
+            Set against the backdrop of the Himalayas and with the pristine Ganga flowing through it, the ancient town of Rishikesh is one of the major tourist and pilgrimage hubs in northern India, where people from across the world arrive in search of peace. Rishikesh is commonly referred to as the ‘yoga capital of the world’ and rightly so. The destination is abuzz with visitors, who come here to learn yoga and meditation. Rishikesh has numerous ashrams, some of which are internationally recognised as centres of philosophical studies, yoga and other ancient Indian traditions of wellness. The Uttarakhand Tourism Development Board organises the annual International Yog Festival (IYF) here, which attracts thousands of yoga enthusiasts. There are several legends associated with Rishikesh. It is said Rishikesh finds a mention in the ancient text Skanda Purana, and in the epic Ramayana. It is said Lord Rama, along with his brothers, came to Rishikesh to do penance after killing Ravana.
+
+Rishikesh is also known for its connection with The Beatles. In February 1968, members of the legendary English rock band visited Maharishi Mahesh Yogi's ashram (now popularly known as the Beatles Ashram) to learn transcendental meditation. The band composed nearly 48 songs during their time at the Maharishi's ashram, many of which appear on the White Album (and a few from Abbey Road). John Lennon recorded a song titled, 'The Happy Rishikesh Song' after his visit. Several other international artists, including Mike Love of the Beach Boys, Paul Horn, Donovan and Gyp Mills, visited the site to contemplate and meditate.
+
+Rishikesh is also a town of quaint cafes, which offer local and international cuisines and are mostly packed with tourists. Interestingly, in the last couple of years, Rishikesh has become very popular for its vibrant Holi celebrations, mostly organised by private hotels and resorts</p>
+        <div class="short-para">
+            <h4 class="itineraries">Itineraries </h4>
+            <div class="itineraries-container">
+                <div class="itineraries-text">
+                    <p class="itineraries-nainital">Itineraries Rishikesh</p>
+                    <p>
+                        Rishikesh River Rafting
+                        Destinations: Rishikesh, Kaudiyala, Shivpuri Duration: 2 night, 3 days Distance: Around 80 km from Rishikesh Experience: River rafting (Category of rapid- Grade I, II, III and IV) Budget: Approx INR 2,500 (per person) <a href="">Read More..</a>                    </p>
+                </div>
+                <div class="itineraries-image">
+                    <img src="https://e1.pxfuel.com/desktop-wallpaper/748/991/desktop-wallpaper-shiva-statue-at-rishikesh-lord-shiva-statue.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+         <h1 class="explore-more">ATTRACTIONS</h1>
+    </div>
+    <div class="image-container">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/1c/77/ce/44/rishikesh-himalayas.jpg" alt="">
+        <img src="https://www.shutterstock.com/image-photo/rishikesh-yoga-city-india-gange-600nw-782899090.jpg" alt="">
+        <img src="https://t3.ftcdn.net/jpg/02/34/58/06/360_F_234580668_iA9ckF7hzR0Y3KxSOUlPhnZzkat2dnfB.jpg" alt="">
+    </div>
+
+    <h4 class="what">WHAT TO DO</h4>
+    <div class="image-grid">
+        
+        <div class="image-row">
+            <div class="image-item">
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="https://e0.pxfuel.com/wallpapers/42/390/desktop-wallpaper-rafting.jpg" alt="">
+                        </div>
+                        <div class="back">
+                            <p>Get your pulse racing with an ultimate river rafting experience in the white water rapids of River Ganga. Rafting is an extremely popular adventure sports in Rishikesh and one can find many certified and authorised operators and instructors here for every grade of rafting. September to June are the best months to experience rafting. You can also try other water sports adventure like kayaking. </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-item">
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="https://campgangavatika.com/img/act/bungee-jumping-in-shivpuri.jpg" alt="">
+                        </div>
+                        <div class="back">
+                            <p>Ever felt like flying like a bird? Well, Mohanchatti in Rishikesh is the place exactly meant for bungee jumping. Visit this place to jump from a height of 83 m (maximum) and for other adventures like flying fox, mountain swings and paragliding.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image-row">
+            <div class="image-item">
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="https://i.pinimg.com/originals/0e/19/ca/0e19cac75051de82a74697ff1d1d6059.jpg" alt="">
+                        </div>
+                        <div class="back">
+                            <p>Rishikesh is one of the few places in India, where you can enjoy a zipline experience. In this extreme sport, you are harnessed to a wire and on being released, you slide down the wire upto 7 m above the river level and then go up, accelerating to speeds upto 160 kmph</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+            
+        </div>
+    </div>
+    <div class="map-container">
+        <div class="map">
+            <h5>GET DIRECTION</h5>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55235.6388216746!2d78.2294089949136!3d30.08767232457314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39093e67cf93f111%3A0xcc78804a6f941bfe!2sRishikesh%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1719917861045!5m2!1sen!2sin" width="700" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+           <div class="elfsight-app-9f043b4c-1dbc-47e1-9681-37c14ea9309e"  width="700" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-elfsight-app-lazy></div>
+    </div>
+
+    <div>
+        <h1 class="explore-more">NEARBY DESTINATIONS</h1>
+   </div>
+   <div class="image-container">
+       <img src="https://himachaltourism.gov.in/wp-content/uploads/2018/01/Chamera-Lake-chamba.jpg" alt="">
+       <img src="https://s3.india.com/wp-content/uploads/2024/03/Feature-Image_-Discovering-Dehradun.jpg?impolicy=Medium_Widthonly&w=700" alt="">
+       <img src="https://uttarakhandtourism.gov.in/sites/default/files/2020-10/Banner3.jpg" alt="">
+       <img src="https://www.trawell.in/admin/images/upload/137201704Haridwar_Rajaji_National_Park_Main.jpg" alt="">
+
+   </div>
+    
+
+    <!----footer--->
+
+    <div class="footer">
+      <ul>
+          <li><h4> About UTDB</h4></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/awards">Awards & Honours</a></li>
+          <li><a href="/message">CEO’s Message</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+          <li><a href="">ttarakhand Tourist Map</a></li>
+      </ul>
+      <ul>
+          <li><h4>Departmental Info</h4></li>
+          <li><a href="">Citizen Charter</a></li>
+          <li><a href=""> Annual Transfer</a></li>
+          <li><a href="">Important Links</a></li>
+          <li><a href="">Policy and Guidelines</a></li>
+          <li><a href="">  RTI</a></li>
+          <li><a href="">Right to Service</a></li>
+          <li><a href=""> Tenders/EOI</a></li>
+          <li><a href=""></a> Vacancies</li>
+      </ul>
+      <ul>
+          <li><h4> Trade</h4></li>
+          <li><a href="">Invest In Uttarakhand Tourism</a></li>
+          <li><a href="">Apply for Veer Chandra Singh Garhwali & Pt. Deen Dayal Homestay Scheme
+          </a></li>
+          <li><a href="">CBSP Training Prog. - Empanelment of Institute
+          </a></li>
+          <li><a href="">Upload Advertisement of Hunar Se Rozgar Tak (HSRT)
+          </a></li>
+          <li><a href="">Transfer List
+          </a></li>
+          <li><a href="">Travel Mart 2024 - 2025
+          </a></li>
+          <li><a href="">Women's empowerment River Rafting Training
+          </a></li>
+          <li><a href="">Tourist Destination Guide Training Program - 2024
+          </a></li>
+          <li><a href="">Tourism Policy 2024
+          </a></li>
+      </ul>
+  </div>
+<div class="image-tourism">
+  <img src="https://uttarakhandtourism.gov.in/themes/utdb_frontend/images/KMVN-Logo.png" alt="">
+<img src="https://uttarakhandtourism.gov.in/themes/utdb_frontend/images/GMVN-Logo.png" alt="">
+<img src="https://uttarakhandtourism.gov.in/themes/utdb_frontend/images/Ministry_of_Tourism_India.png" alt="">
+</div>
+</div>
+<div>
+  <ul class="social-icons">
+      <li><a href="https://www.facebook.com" target="https://www.facebook.com/people/Neeraj-Rajput/pfbid034aZAGJVz9x5b8FVQ6ng5pWiGfGx9yr4CCSgSLp3w5NXsUwHV12JzRkiCJdrM49kZl/?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="https://www.instagram.com" target="https://www.instagram.com/neerajrajput8624/?igsh=MWpocTc3c2V5YW9waA%3D%3D"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="https://www.linkedin.com" target="https://www.linkedin.com/in/neeraj-singh-664631297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i class="fab fa-linkedin-in"></i></a></li>
+      <li><a href="https://www.twitter.com" target="https://www.instagram.com/neerajrajput8624?igsh=MWpocTc3c2V5YW9waA== "><i class="fab fa-twitter"></i></a></li>
+  </ul>
+</div>
+<div class="copyright">
+  <p>For any general queries or details, please mail us at neerajsingh342002@gmail.com or call 8826632772, 7617747175</p>
+  <p>Copyright © 2024 Uttarakhand Tourism Development Board. - All rights reserved. </p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

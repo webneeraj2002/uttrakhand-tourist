@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uttarakhand Tourism</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style2.css">
+    <script>
+      function handleSearch(event) {
+          event.preventDefault(); 
+          const query = document.querySelector('input[type="search"]').value.toLowerCase();
+          
+          const searchMap = {
+              'rishikesh': '/rishikesh',
+              'nainital': '/nainital',
+              'corbett': '/corbett',
+              'panch kedar': '/panch-kedar',
+              'panch badri': '/panch-badri',
+              'panch prayag': '/panch-prayag',
+              'hemkund sahib': '/hemkund-sahib',
+              'dehradun': '/dehradun',
+          };
+          
+          if (searchMap[query]) {
+              window.location.href = searchMap[query];
+          } else {
+              alert('Page not found for: ' + query);
+          }
+      }
+  </script>
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light .bg-danger.bg-gradient custom-navbar">
+        <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/home">HOME</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      EXPLORE
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                      <li><a class="dropdown-item" href="#"><h5>Spiritual</h5></a></li>
+                      <li><a class="dropdown-item" href="/panch-kedar">Panch Kedar</a></li>
+                      <li><a class="dropdown-item" href="/panch-badri">Panch Badri</a></li>
+                      <li><a class="dropdown-item" href="/panch-parayag">Panch Parayag</a></li>
+                      <li><a class="dropdown-item" href="/hemkund-sahib">Hemkund Sahib</a></li>
+                      <li><a class="dropdown-item" href="/rishikesh">Rishikesh</a></li>
+                      <li><a class="dropdown-item" href="/nainital">Nainital</a></li>
+                      <li><a class="dropdown-item" href="/corbet">Jim Corbet </a></li>
+                      <li><a class="dropdown-item" href="#">Dhari Devi Temple</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      PLAN
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                      <li><a class="dropdown-item" href="/accommodations"> Accommodations</a></li>
+                      <li><a class="dropdown-item" href="/itineraries">Itineraries</a></li>
+                      <li><a class="dropdown-item" href="/treks">Treks</a></li>
+                      <li><a class="dropdown-item" href="/tourism-cir">Tourism Circuits </a></li>
+                      <li><a class="dropdown-item" href="#">Tourist Guide</a></li>
+                      <li><a class="dropdown-item" href="#">Travel Agents</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      TRADE
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                      <li><a class="dropdown-item" href="/homestay">Homestay Listing</a></li>
+                      <li><a class="dropdown-item" href="/travle">Travel Trade Listing</a></li>
+                      <li><a class="dropdown-item" href="/homestay-registration">Homestay Listing Registarion</a></li>
+                      <li><a class="dropdown-item" href="/travel-trade">Travel Trade Listing</a></li>
+                      <li><a class="dropdown-item" href="#">Invest In Uttarakhand Tourism</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      FAQ
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                      <li><a class="dropdown-item" href="/destination-faq">Destination FAQ</a></li>
+                      <li><a class="dropdown-item" href="/adventure">Adventure Tourism FAQ</a></li>
+                      <li><a class="dropdown-item" href="/homestay-faq">Home Stay FAQ</a></li>
+                      <li><a class="dropdown-item" href="/places">Places of Interest</a></li>
+                      <li><a class="dropdown-item" href="/religious">Religious Tourism FAQ</a></li>
+                      <li><a class="dropdown-item" href="/travel-faq">Travel Trade FAQ</a></li>
+                      <li><a class="dropdown-item" href="/treks">Trekking FAQ</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex ml-auto" onsubmit="handleSearch(event)">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success btn-red" type="submit">Search</button>
+              </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- Your content goes here -->
+       
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.uttarakhand-tourism.com/uttarakhand/images/kartikswamitemple1.jpg" class="d-block w-100" alt="First slide">
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div>
+        <h1 class="explore-more">AWARDS & HONOURS</h1>
+        <div class="about">
+            <p>In 2021, Uttarakhand Tourism received the prestigious "One to Watch" award from the World Responsible Tourism Awards committee. The names were announced in a ceremony in London, and Uttarakhand Tourism was recognised for its efforts in sustaining employees and communities through the pandemic.</p>
+            <p>Uttarakhand Tourism won big at the India Today Tourism Survey & Awards 2021, with three awards - “Best Wildlife Destination”, “Best Adventure Destination” & “Best Spiritual Destination”.</p>
+            
+            <p>Uttarakhand Tourism won the award for “Best State Adventure Tourism” at the South Asia Travel Awards on August 30, 2019. </p>
+            <p>National Tourism Award 2018-19</p>
+            <p>In 2018, the National Tourism Award was presented to Uttarakhand by the Ministry of Tourism, Government of India in the category of “Best Film Promotion Friendly State/Union”</p>
+             <p>Best Destination for adventure (India) 2013 by Lonely Planet Magazine.</p>
+             <p>State received the “Best Destination for Adventure (India)” 2013 Award, given by Lonely Planet Magazine</p>
+             <p>In 2012, state received the “Best Emerging Destination (India)” honour by Travel & Leisure Magazin</p>
+             <p>In 2007-08, state received the award for India’s Best Maintained Tourist Friendly National Park/Wildlife Sanctuary</p>
+              <p>In 2004, Best State Tourism Board Express – Galileo Awards</p>
+             <p>In 2007, "Tourist Destination Religious Tourism Award, given by the Ministry of Tourism, Govt. of India. This Priviledge given by CNVC Media company.)</p>
+             <p>In 2004, the Uttarakhand Government won the award for "Best Practices" (Under Veer Chandra Singh Garhwali Tourism Self-employed Plans), given by Ministry of Tourism, Govt. of India</p>
+             <p>In 2000-2001, the National Awards for Tourism & Incentives, given by Ministry of Tourism, Govt. of India</p>
+        </div>
+    </div>
+      
+
+    <!----footer--->
+
+    <div class="footer">
+      <ul>
+          <li><h4> About UTDB</h4></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/awards">Awards & Honours</a></li>
+          <li><a href="/message">CEO’s Message</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+          <li><a href="">ttarakhand Tourist Map</a></li>
+      </ul>
+      <ul>
+          <li><h4>Departmental Info</h4></li>
+          <li><a href="">Citizen Charter</a></li>
+          <li><a href=""> Annual Transfer</a></li>
+          <li><a href="">Important Links</a></li>
+          <li><a href="">Policy and Guidelines</a></li>
+          <li><a href="">  RTI</a></li>
+          <li><a href="">Right to Service</a></li>
+          <li><a href=""> Tenders/EOI</a></li>
+          <li><a href=""></a> Vacancies</li>
+      </ul>
+      <ul>
+          <li><h4> Trade</h4></li>
+          <li><a href="">Invest In Uttarakhand Tourism</a></li>
+          <li><a href="">Apply for Veer Chandra Singh Garhwali & Pt. Deen Dayal Homestay Scheme
+          </a></li>
+          <li><a href="">CBSP Training Prog. - Empanelment of Institute
+          </a></li>
+          <li><a href="">Upload Advertisement of Hunar Se Rozgar Tak (HSRT)
+          </a></li>
+          <li><a href="">Transfer List
+          </a></li>
+          <li><a href="">Travel Mart 2024 - 2025
+          </a></li>
+          <li><a href="">Women's empowerment River Rafting Training
+          </a></li>
+          <li><a href="">Tourist Destination Guide Training Program - 2024
+          </a></li>
+          <li><a href="">Tourism Policy 2024
+          </a></li>
+      </ul>
+  </div>
+<div class="image-tourism">
+  <img src="https://uttarakhandtourism.gov.in/themes/utdb_frontend/images/KMVN-Logo.png" alt="">
+<img src="https://uttarakhandtourism.gov.in/themes/utdb_frontend/images/GMVN-Logo.png" alt="">
+<img src="https://uttarakhandtourism.gov.in/themes/utdb_frontend/images/Ministry_of_Tourism_India.png" alt="">
+</div>
+</div>
+<div>
+  <ul class="social-icons">
+      <li><a href="https://www.facebook.com" target="https://www.facebook.com/people/Neeraj-Rajput/pfbid034aZAGJVz9x5b8FVQ6ng5pWiGfGx9yr4CCSgSLp3w5NXsUwHV12JzRkiCJdrM49kZl/?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="https://www.instagram.com" target="https://www.instagram.com/neerajrajput8624/?igsh=MWpocTc3c2V5YW9waA%3D%3D"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="https://www.linkedin.com" target="https://www.linkedin.com/in/neeraj-singh-664631297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i class="fab fa-linkedin-in"></i></a></li>
+      <li><a href="https://www.twitter.com" target="https://www.instagram.com/neerajrajput8624?igsh=MWpocTc3c2V5YW9waA== "><i class="fab fa-twitter"></i></a></li>
+  </ul>
+</div>
+<div class="copyright">
+  <p>For any general queries or details, please mail us at neerajsingh342002@gmail.com or call 8826632772, 7617747175</p>
+  <p>Copyright © 2024 Uttarakhand Tourism Development Board. - All rights reserved. </p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uttarakhand Tourism</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style2.css">
+    <script>
+      function handleSearch(event) {
+          event.preventDefault(); 
+          const query = document.querySelector('input[type="search"]').value.toLowerCase();
+          
+          const searchMap = {
+              'rishikesh': '/rishikesh',
+              'nainital': '/nainital',
+              'corbett': '/corbett',
+              'panch kedar': '/panch-kedar',
+              'panch badri': '/panch-badri',
+              'panch prayag': '/panch-prayag',
+              'hemkund sahib': '/hemkund-sahib',
+              'dehradun': '/dehradun',
+          };
+          
+          if (searchMap[query]) {
+              window.location.href = searchMap[query];
+          } else {
+              alert('Page not found for: ' + query);
+          }
+      }
+  </script>
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light .bg-danger.bg-gradient custom-navbar">
+        <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/home">HOME</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      EXPLORE
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                      <li><a class="dropdown-item" href="#"><h5>Spiritual</h5></a></li>
+                      <li><a class="dropdown-item" href="/panch-kedar">Panch Kedar</a></li>
+                      <li><a class="dropdown-item" href="/panch-badri">Panch Badri</a></li>
+                      <li><a class="dropdown-item" href="/panch-parayag">Panch Parayag</a></li>
+                      <li><a class="dropdown-item" href="/hemkund-sahib">Hemkund Sahib</a></li>
+                      <li><a class="dropdown-item" href="/rishikesh">Rishikesh</a></li>
+                      <li><a class="dropdown-item" href="/nainital">Nainital</a></li>
+                      <li><a class="dropdown-item" href="/corbet">Jim Corbet </a></li>
+                      <li><a class="dropdown-item" href="#">Dhari Devi Temple</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      PLAN
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                      <li><a class="dropdown-item" href="/accommodations"> Accommodations</a></li>
+                      <li><a class="dropdown-item" href="/itineraries">Itineraries</a></li>
+                      <li><a class="dropdown-item" href="/treks">Treks</a></li>
+                      <li><a class="dropdown-item" href="/tourism-cir">Tourism Circuits </a></li>
+                      <li><a class="dropdown-item" href="#">Tourist Guide</a></li>
+                      <li><a class="dropdown-item" href="#">Travel Agents</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      TRADE
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                      <li><a class="dropdown-item" href="/homestay">Homestay Listing</a></li>
+                      <li><a class="dropdown-item" href="/travle">Travel Trade Listing</a></li>
+                      <li><a class="dropdown-item" href="/homestay-registration">Homestay Listing Registarion</a></li>
+                      <li><a class="dropdown-item" href="/travel-trade">Travel Trade Listing</a></li>
+                      <li><a class="dropdown-item" href="#">Invest In Uttarakhand Tourism</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      FAQ
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                      <li><a class="dropdown-item" href="/destination-faq">Destination FAQ</a></li>
+                      <li><a class="dropdown-item" href="/adventure">Adventure Tourism FAQ</a></li>
+                      <li><a class="dropdown-item" href="/homestay-faq">Home Stay FAQ</a></li>
+                      <li><a class="dropdown-item" href="/places">Places of Interest</a></li>
+                      <li><a class="dropdown-item" href="/religious">Religious Tourism FAQ</a></li>
+                      <li><a class="dropdown-item" href="/travel-faq">Travel Trade FAQ</a></li>
+                      <li><a class="dropdown-item" href="/treks">Trekking FAQ</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex ml-auto" onsubmit="handleSearch(event)">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success btn-red" type="submit">Search</button>
+              </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- Your content goes here -->
+       
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Kedarnath_and_Kedar_Dome%2C_Uttarakhand_India_November_2013.jpg" class="d-block w-100" alt="First slide">
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div>
+        <h1 class="explore-more">CEO'S MESSAGE</h1>
+        <div class="about">
+            <h5>WELCOME ! </h5>
+            <p>I am delighted to welcome you to the official website of the Uttarakhand Tourism Development Board. I dedicated this website to peace-loving, progressive and democratically empowered people of Uttarakhand and to the well-wishers of beautiful Uttarakhand.</p>
+            <p>Visitors who enjoyed their trips, for business or pleasure, to this border Himalayan State need no further introduction on acceptance of Uttarakhand as one of the most progressive States of the Indian Union.</p>
+            <p>You have to come to Uttarakhand to experience the best of hospitality people, nature, culture and peace.We will keep you informed and updated about our activities and missions and seek your valuable feedback and participation.</p>
+            <p>Uttarakhand Tourism Development Board is having an ongoing initiative to inform the public on activities of the Ministry and the entire tourism sector.</p>
+            <p>We have created avenues to hear from you, thereby making our website more interactive, a concept that is in tune with modern times. We therefore wish to read more of your opinions about our services, publications, and even your expectations from the service of delivery.</p>
+            <p>Join us and share with us your experience as we strive to improve the tourism sector.</p>
+             <h6>Neeraj Singh.  </h6>
+        </div>
+    </div>
+      
+
+    <!----footer--->
+
+    <div class="footer">
+      <ul>
+          <li><h4> About UTDB</h4></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/awards">Awards & Honours</a></li>
+          <li><a href="/message">CEO’s Message</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+          <li><a href="">ttarakhand Tourist Map</a></li>
+      </ul>
+      <ul>
+          <li><h4>Departmental Info</h4></li>
+          <li><a href="">Citizen Charter</a></li>
+          <li><a href=""> Annual Transfer</a></li>
+          <li><a href="">Important Links</a></li>
+          <li><a href="">Policy and Guidelines</a></li>
+          <li><a href="">  RTI</a></li>
+          <li><a href="">Right to Service</a></li>
+          <li><a href=""> Tenders/EOI</a></li>
+          <li><a href=""></a> Vacancies</li>
+      </ul>
+      <ul>
+          <li><h4> Trade</h4></li>
+          <li><a href="">Invest In Uttarakhand Tourism</a></li>
+          <li><a href="">Apply for Veer Chandra Singh Garhwali & Pt. Deen Dayal Homestay Scheme
+          </a></li>
+          <li><a href="">CBSP Training Prog. - Empanelment of Institute
+          </a></li>
+          <li><a href="">Upload Advertisement of Hunar Se Rozgar Tak (HSRT)
+          </a></li>
+          <li><a href="">Transfer List
+          </a></li>
+          <li><a href="">Travel Mart 2024 - 2025
+          </a></li>
+          <li><a href="">Women's empowerment River Rafting Training
+          </a></li>
+          <li><a href="">Tourist Destination Guide Training Program - 2024
+          </a></li>
+          <li><a href="">Tourism Policy 2024
+          </a></li>
+      </ul>
+  </div>
+<div class="image-tourism">
+  <img src="https://uttarakhandtourism.gov.in/themes/utdb_frontend/images/KMVN-Logo.png" alt="">
+<img src="https://uttarakhandtourism.gov.in/themes/utdb_frontend/images/GMVN-Logo.png" alt="">
+<img src="https://uttarakhandtourism.gov.in/themes/utdb_frontend/images/Ministry_of_Tourism_India.png" alt="">
+</div>
+</div>
+<div>
+  <ul class="social-icons">
+      <li><a href="https://www.facebook.com" target="https://www.facebook.com/people/Neeraj-Rajput/pfbid034aZAGJVz9x5b8FVQ6ng5pWiGfGx9yr4CCSgSLp3w5NXsUwHV12JzRkiCJdrM49kZl/?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="https://www.instagram.com" target="https://www.instagram.com/neerajrajput8624/?igsh=MWpocTc3c2V5YW9waA%3D%3D"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="https://www.linkedin.com" target="https://www.linkedin.com/in/neeraj-singh-664631297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i class="fab fa-linkedin-in"></i></a></li>
+      <li><a href="https://www.twitter.com" target="https://www.instagram.com/neerajrajput8624?igsh=MWpocTc3c2V5YW9waA== "><i class="fab fa-twitter"></i></a></li>
+  </ul>
+</div>
+<div class="copyright">
+  <p>For any general queries or details, please mail us at neerajsingh342002@gmail.com or call 8826632772, 7617747175</p>
+  <p>Copyright © 2024 Uttarakhand Tourism Development Board. - All rights reserved. </p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
