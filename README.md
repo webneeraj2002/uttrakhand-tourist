@@ -1,2 +1,16 @@
 # uttrakhand-tourist
-uttrakhand
+Uttarakhand is famous for Chota Char Dham, which means 'journey to four centers'. These four religious centers in Uttarakhand are represented by Badrinath (dedicated to Lord Vishnu), Kedarnath (dedicated to Lord Shiva), Gangotri (the holy origin of the river Ganga) and Yamunotri (the holy origin of the river Yamuna). Badrinath is part of the bigger Char Dham.
+
+The Char Dham Yatra begins around the first to second week of May every year. These dates are announced in the national media. The base for the yatra is generally the Rishikesh town which has all the amenities available for pilgrims and tourists alike. Pilgrims and tourists generally book their journey through the local travel agents to all the four locations.
+
+Badrinath
+Badrinath is the abode of Lord Vishnu, who is called 'Badri Vishal', Badri the Big One. Legend has it that Badrinath was the abode of Lord Shiva, who used to reside there with his consort Parvati. It is Located in Chamoli District of Uttarakhand. Lord Vishnu happened to like the place and wished to reside there permanently, so He took the form of an infant and started crying inconsolably. Mother Parvati's heart melted and she picked up the infant Vishnu and started cradling Him. The crying of the infant, however, disturbed the meditation of Lord Shiva and unable to bear the crying He left for higher reaches of the Himalayas and made Kedarnath His home. Once Lord Shiva left, Mother Parvati too followed, which gave an opportunity to Lord Vishnu to take His original form and remain at Badrinath forever. The priests of Badrinath are from the southernmost part of India, i.e. Kerala. This is according to the rules laid down by Adi Shankara. Badrinath remains out of bounds for pilgrims for six months a year, from October to May.
+
+Kedarnath
+Kedarnath is the abode of Lord Shiva. Kedarnath is one of the twelve Jyotirlingams of India and the only one in the Uttarakhand. While there is a motorable road to Badrinath, Kedarnath could only be reached by foot. The 18-kilometre (11 mi) trek begins from Gaurikund. After the 2013 Himalayan floods, the trek currently is of more than 18 km (11 mi) due to washing away of trekking paths.
+
+Gangotri
+Gangotri is the origin of the holy Ganga. Ganga is revered as a mother throughout India. According to the Hindu philosophy, a place considered extremely holy if a river running through it flows in the northern direction. Gangotri is a place which is not only the origin of Ganga but also where Ganga flows in a northerly direction, hence the name Gangotri. The river Ganga flows out from the melting Gangotri glacier, which is at a distance of around 18 km (11 mi) from the Gangotri town. Close to the temple is Bhagirath Shila, which according to the Hindu philosophy is the place where Bhagirath did penance for 5500 years to seek the blessings of Mother Ganga and requested her to descend to the Earth from her heavenly abode to cleanse the sins of his ancestors.
+
+Yamunotri
+Yamunotri is the origin of the holy river Yamuna. A temple dedicated to the holy river Yamuna is situated at the place. The actual origin of the river is the Yamunotri glacier further up into the Himalayas where very few pilgrims go due to the difficulty it entails
